@@ -4,10 +4,10 @@ import java.util.List;
 
 import org.junit.Test;
 
-import cc.lee.registry.client.zookeeper.ZooKeeperClient;
-import cc.lee.registry.client.zookeeper.listener.ChildrenListener;
-import cc.lee.registry.client.zookeeper.zkclient.ZkclientZooKeeperTransporter;
 import cc.lee.registry.common.URL;
+import cc.lee.registry.remoting.zookeeper.ZooKeeperClient;
+import cc.lee.registry.remoting.zookeeper.listener.ChildrenListener;
+import cc.lee.registry.remoting.zookeeper.zkclient.ZkclientZooKeeperTransporter;
 
 public class ZookeeperClientTest {
 	@Test

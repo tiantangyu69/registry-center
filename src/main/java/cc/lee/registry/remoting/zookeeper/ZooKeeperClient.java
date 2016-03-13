@@ -1,10 +1,10 @@
-package cc.lee.registry.client.zookeeper;
+package cc.lee.registry.remoting.zookeeper;
 
 import java.util.List;
 
-import cc.lee.registry.client.zookeeper.listener.ChildrenListener;
-import cc.lee.registry.client.zookeeper.listener.StateListener;
 import cc.lee.registry.common.URL;
+import cc.lee.registry.remoting.zookeeper.listener.ChildrenListener;
+import cc.lee.registry.remoting.zookeeper.listener.StateListener;
 
 /**
  * ZooKeeper操作接口

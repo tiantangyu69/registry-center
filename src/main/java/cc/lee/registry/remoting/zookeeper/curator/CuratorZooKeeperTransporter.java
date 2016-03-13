@@ -1,8 +1,8 @@
-package cc.lee.registry.client.zookeeper.curator;
+package cc.lee.registry.remoting.zookeeper.curator;
 
-import cc.lee.registry.client.zookeeper.ZooKeeperClient;
-import cc.lee.registry.client.zookeeper.support.ZooKeeperTransporter;
 import cc.lee.registry.common.URL;
+import cc.lee.registry.remoting.zookeeper.ZooKeeperClient;
+import cc.lee.registry.remoting.zookeeper.support.ZooKeeperTransporter;
 
 public class CuratorZooKeeperTransporter implements ZooKeeperTransporter {
 	@Override

@@ -1,4 +1,4 @@
-package cc.lee.registry.client.zookeeper.curator;
+package cc.lee.registry.remoting.zookeeper.curator;
 
 import java.util.List;
 
@@ -14,10 +14,10 @@ import org.apache.zookeeper.KeeperException.NoNodeException;
 import org.apache.zookeeper.KeeperException.NodeExistsException;
 import org.apache.zookeeper.WatchedEvent;
 
-import cc.lee.registry.client.zookeeper.listener.ChildrenListener;
-import cc.lee.registry.client.zookeeper.listener.StateListener;
-import cc.lee.registry.client.zookeeper.support.AbstractZooKeeperClient;
 import cc.lee.registry.common.URL;
+import cc.lee.registry.remoting.zookeeper.listener.ChildrenListener;
+import cc.lee.registry.remoting.zookeeper.listener.StateListener;
+import cc.lee.registry.remoting.zookeeper.support.AbstractZooKeeperClient;
 /**
  * curator客户端
  * @author lizhitao

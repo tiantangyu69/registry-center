@@ -1,4 +1,4 @@
-package cc.lee.registry.client.zookeeper.listener;
+package cc.lee.registry.remoting.zookeeper.listener;
 /**
  * ZooKeeper状态监听接口
  * @author lizhitao

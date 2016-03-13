@@ -1,7 +1,7 @@
-package cc.lee.registry.client.zookeeper.support;
+package cc.lee.registry.remoting.zookeeper.support;
 
-import cc.lee.registry.client.zookeeper.ZooKeeperClient;
 import cc.lee.registry.common.URL;
+import cc.lee.registry.remoting.zookeeper.ZooKeeperClient;
 /**
  * @author lizhitao
  */
