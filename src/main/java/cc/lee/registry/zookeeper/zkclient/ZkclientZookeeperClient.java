@@ -9,9 +9,9 @@ import org.I0Itec.zkclient.exception.ZkNoNodeException;
 import org.I0Itec.zkclient.exception.ZkNodeExistsException;
 import org.apache.zookeeper.Watcher.Event.KeeperState;
 
+import cc.lee.registry.URL;
 import cc.lee.registry.zookeeper.listener.ChildrenListener;
 import cc.lee.registry.zookeeper.support.AbstractZooKeeperClient;
-import cc.lee.registry.zookeeper.support.ConnectInfo;
 
 import com.alibaba.dubbo.remoting.zookeeper.StateListener;
 
@@ -27,7 +27,7 @@ public class ZkclientZookeeperClient extends AbstractZooKeeperClient<IZkChildLis
 	 * 初始ZkClient
 	 * @param address 连接地址
 	 */
-	public ZkclientZookeeperClient(ConnectInfo connectInfo) {
+	public ZkclientZookeeperClient(URL connectInfo) {
 		super(connectInfo);
 		client = new ZkClient(connectInfo.getAddress());
 		// 添加授权信息

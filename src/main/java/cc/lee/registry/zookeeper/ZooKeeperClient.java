@@ -2,9 +2,9 @@ package cc.lee.registry.zookeeper;
 
 import java.util.List;
 
+import cc.lee.registry.URL;
 import cc.lee.registry.zookeeper.listener.ChildrenListener;
 import cc.lee.registry.zookeeper.listener.StateListener;
-import cc.lee.registry.zookeeper.support.ConnectInfo;
 
 /**
  * ZooKeeper操作接口
@@ -73,5 +73,5 @@ public interface ZooKeeperClient {
 	 * 获取ZooKeeper连接信息
 	 * @return
 	 */
-	ConnectInfo getConnectInfo();
+	URL getConnectInfo();
 }

@@ -1,10 +1,10 @@
-package cc.lee.registry.zookeeper.support;
+package cc.lee.registry;
 
 /**
  * ZooKeeper连接信息
  * @author lizhitao
  */
-public class ConnectInfo {
+public class URL {
 	/**
 	 * 连接地址
 	 */

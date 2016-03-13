@@ -4,15 +4,15 @@ import java.util.List;
 
 import org.junit.Test;
 
+import cc.lee.registry.URL;
 import cc.lee.registry.zookeeper.ZooKeeperClient;
 import cc.lee.registry.zookeeper.listener.ChildrenListener;
-import cc.lee.registry.zookeeper.support.ConnectInfo;
 import cc.lee.registry.zookeeper.zkclient.ZkclientZooKeeperTransporter;
 
 public class ZookeeperClientTest {
 	@Test
 	public void testClient() throws InterruptedException {
-		ConnectInfo connectInfo = new ConnectInfo();
+		URL connectInfo = new URL();
 		connectInfo.setAddress("localhost:2181");
 		ZooKeeperClient client = new ZkclientZooKeeperTransporter()
 				.connect(connectInfo);

@@ -14,10 +14,10 @@ import org.apache.zookeeper.KeeperException.NoNodeException;
 import org.apache.zookeeper.KeeperException.NodeExistsException;
 import org.apache.zookeeper.WatchedEvent;
 
+import cc.lee.registry.URL;
 import cc.lee.registry.zookeeper.listener.ChildrenListener;
 import cc.lee.registry.zookeeper.listener.StateListener;
 import cc.lee.registry.zookeeper.support.AbstractZooKeeperClient;
-import cc.lee.registry.zookeeper.support.ConnectInfo;
 /**
  * curator客户端
  * @author lizhitao
@@ -25,7 +25,7 @@ import cc.lee.registry.zookeeper.support.ConnectInfo;
 public class CuratorZooKeeperClient extends AbstractZooKeeperClient<CuratorWatcher> {
 	private final CuratorFramework client;
 	
-	public CuratorZooKeeperClient(ConnectInfo connectInfo) {
+	public CuratorZooKeeperClient(URL connectInfo) {
 		super(connectInfo);
 		Builder builder = CuratorFrameworkFactory.builder()
 				.connectString(connectInfo.getAddress())

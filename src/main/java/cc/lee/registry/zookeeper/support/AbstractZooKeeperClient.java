@@ -9,6 +9,7 @@ import java.util.concurrent.CopyOnWriteArraySet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import cc.lee.registry.URL;
 import cc.lee.registry.zookeeper.ZooKeeperClient;
 import cc.lee.registry.zookeeper.listener.ChildrenListener;
 import cc.lee.registry.zookeeper.listener.StateListener;
@@ -32,9 +33,9 @@ public abstract class AbstractZooKeeperClient<TargetChildrenListener> implements
 	 */
 	private volatile boolean closed = false;
 	
-	private final ConnectInfo connectInfo;
+	private final URL connectInfo;
 	
-	public AbstractZooKeeperClient(ConnectInfo connectInfo) {
+	public AbstractZooKeeperClient(URL connectInfo) {
 		this.connectInfo = connectInfo;
 	}
 
@@ -42,7 +43,7 @@ public abstract class AbstractZooKeeperClient<TargetChildrenListener> implements
 	 * 获取ZooKeeper连接地址
 	 */
 	@Override
-	public ConnectInfo getConnectInfo() {
+	public URL getConnectInfo() {
 		return this.connectInfo;
 	}
 
