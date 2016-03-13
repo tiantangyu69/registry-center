@@ -1,6 +1,6 @@
 package cc.lee.registry.zookeeper.support;
 
-import cc.lee.registry.URL;
+import cc.lee.registry.support.URL;
 import cc.lee.registry.zookeeper.ZooKeeperClient;
 /**
  * @author lizhitao

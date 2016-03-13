@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.junit.Test;
 
-import cc.lee.registry.URL;
+import cc.lee.registry.support.URL;
 import cc.lee.registry.zookeeper.ZooKeeperClient;
 import cc.lee.registry.zookeeper.listener.ChildrenListener;
 import cc.lee.registry.zookeeper.zkclient.ZkclientZooKeeperTransporter;

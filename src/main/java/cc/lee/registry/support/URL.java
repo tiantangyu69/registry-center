@@ -1,4 +1,4 @@
-package cc.lee.registry;
+package cc.lee.registry.support;
 
 /**
  * ZooKeeper连接信息

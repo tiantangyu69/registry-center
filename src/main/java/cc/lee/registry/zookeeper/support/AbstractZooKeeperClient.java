@@ -9,7 +9,7 @@ import java.util.concurrent.CopyOnWriteArraySet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import cc.lee.registry.URL;
+import cc.lee.registry.support.URL;
 import cc.lee.registry.zookeeper.ZooKeeperClient;
 import cc.lee.registry.zookeeper.listener.ChildrenListener;
 import cc.lee.registry.zookeeper.listener.StateListener;
@@ -33,18 +33,18 @@ public abstract class AbstractZooKeeperClient<TargetChildrenListener> implements
 	 */
 	private volatile boolean closed = false;
 	
-	private final URL connectInfo;
+	private final URL url;
 	
-	public AbstractZooKeeperClient(URL connectInfo) {
-		this.connectInfo = connectInfo;
+	public AbstractZooKeeperClient(URL url) {
+		this.url = url;
 	}
 
 	/**
 	 * 获取ZooKeeper连接地址
 	 */
 	@Override
-	public URL getConnectInfo() {
-		return this.connectInfo;
+	public URL getURL() {
+		return this.url;
 	}
 
 	/**

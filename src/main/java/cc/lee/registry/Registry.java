@@ -1,5 +1,7 @@
 package cc.lee.registry;
 
-public interface Registry {
+import cc.lee.registry.support.Node;
+
+public interface Registry extends Node, RegistryService {
 
 }
