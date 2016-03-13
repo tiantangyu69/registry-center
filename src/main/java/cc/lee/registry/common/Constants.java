@@ -28,6 +28,10 @@ public class Constants {
 	public static final String FILE_KEY = "file";
 	public static final String CHECK_KEY = "check";
 	public static final String CONSUMER_PROTOCOL = "consumer";
+	public final static String PATH_SEPARATOR = "/";
+	public static final String ROUTERS_CATEGORY = "routers";
+	public static final String CONSUMERS_CATEGORY = "consumers";
+	public static final String CONFIGURATORS_CATEGORY = "configurators";
 	/**
 	 * 注册中心是否同步存储文件，默认异步
 	 */
