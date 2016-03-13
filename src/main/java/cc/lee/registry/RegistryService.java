@@ -2,7 +2,7 @@ package cc.lee.registry;
 
 import java.util.List;
 
-import cc.lee.registry.support.URL;
+import cc.lee.registry.common.URL;
 
 public interface RegistryService {
 

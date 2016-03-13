@@ -1,8 +1,8 @@
-package cc.lee.registry.zookeeper;
+package cc.lee.registry.client.zookeeper;
 
 import java.util.List;
 
-import cc.lee.registry.support.URL;
+import cc.lee.registry.common.URL;
 import cc.lee.registry.zookeeper.listener.ChildrenListener;
 import cc.lee.registry.zookeeper.listener.StateListener;
 

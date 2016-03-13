@@ -9,7 +9,7 @@ import org.I0Itec.zkclient.exception.ZkNoNodeException;
 import org.I0Itec.zkclient.exception.ZkNodeExistsException;
 import org.apache.zookeeper.Watcher.Event.KeeperState;
 
-import cc.lee.registry.support.URL;
+import cc.lee.registry.common.URL;
 import cc.lee.registry.zookeeper.listener.ChildrenListener;
 import cc.lee.registry.zookeeper.support.AbstractZooKeeperClient;
 
@@ -29,7 +29,7 @@ public class ZkclientZookeeperClient extends AbstractZooKeeperClient<IZkChildLis
 	 */
 	public ZkclientZookeeperClient(URL url) {
 		super(url);
-		client = new ZkClient(url.getAddress());
+		client = new ZkClient(url.getBackupAddress());
 		// 添加授权信息
 		String authority = url.getAuthority();
 		if (null != authority && authority.length() > 0) {

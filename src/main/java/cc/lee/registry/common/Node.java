@@ -1,4 +1,5 @@
-package cc.lee.registry.support;
+package cc.lee.registry.common;
+
 
 
 /**

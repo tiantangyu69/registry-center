@@ -14,7 +14,7 @@ import org.apache.zookeeper.KeeperException.NoNodeException;
 import org.apache.zookeeper.KeeperException.NodeExistsException;
 import org.apache.zookeeper.WatchedEvent;
 
-import cc.lee.registry.support.URL;
+import cc.lee.registry.common.URL;
 import cc.lee.registry.zookeeper.listener.ChildrenListener;
 import cc.lee.registry.zookeeper.listener.StateListener;
 import cc.lee.registry.zookeeper.support.AbstractZooKeeperClient;
@@ -28,7 +28,7 @@ public class CuratorZooKeeperClient extends AbstractZooKeeperClient<CuratorWatch
 	public CuratorZooKeeperClient(URL url) {
 		super(url);
 		Builder builder = CuratorFrameworkFactory.builder()
-				.connectString(url.getAddress())
+				.connectString(url.getBackupAddress())
 				.retryPolicy(new RetryNTimes(Integer.MAX_VALUE, 1000))
 				.connectionTimeoutMs(5000);
 		// 添加授权信息

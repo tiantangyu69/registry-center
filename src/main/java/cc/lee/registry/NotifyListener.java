@@ -2,7 +2,7 @@ package cc.lee.registry;
 
 import java.util.List;
 
-import com.alibaba.dubbo.common.URL;
+import cc.lee.registry.common.URL;
 
 /**
  * NotifyListener. (API, Prototype, ThreadSafe)
