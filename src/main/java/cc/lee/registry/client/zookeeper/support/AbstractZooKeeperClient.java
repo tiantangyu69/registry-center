@@ -1,4 +1,4 @@
-package cc.lee.registry.zookeeper.support;
+package cc.lee.registry.client.zookeeper.support;
 
 import java.util.List;
 import java.util.Set;
@@ -10,9 +10,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import cc.lee.registry.client.zookeeper.ZooKeeperClient;
+import cc.lee.registry.client.zookeeper.listener.ChildrenListener;
+import cc.lee.registry.client.zookeeper.listener.StateListener;
 import cc.lee.registry.common.URL;
-import cc.lee.registry.zookeeper.listener.ChildrenListener;
-import cc.lee.registry.zookeeper.listener.StateListener;
 
 /**
  * 抽象ZooKeeper客户端

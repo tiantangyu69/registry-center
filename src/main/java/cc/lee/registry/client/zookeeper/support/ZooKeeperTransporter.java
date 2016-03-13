@@ -1,4 +1,4 @@
-package cc.lee.registry.zookeeper.support;
+package cc.lee.registry.client.zookeeper.support;
 
 import cc.lee.registry.client.zookeeper.ZooKeeperClient;
 import cc.lee.registry.common.URL;

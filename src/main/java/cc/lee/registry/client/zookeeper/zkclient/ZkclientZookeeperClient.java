@@ -1,4 +1,4 @@
-package cc.lee.registry.zookeeper.zkclient;
+package cc.lee.registry.client.zookeeper.zkclient;
 
 import java.util.List;
 
@@ -9,9 +9,9 @@ import org.I0Itec.zkclient.exception.ZkNoNodeException;
 import org.I0Itec.zkclient.exception.ZkNodeExistsException;
 import org.apache.zookeeper.Watcher.Event.KeeperState;
 
+import cc.lee.registry.client.zookeeper.listener.ChildrenListener;
+import cc.lee.registry.client.zookeeper.support.AbstractZooKeeperClient;
 import cc.lee.registry.common.URL;
-import cc.lee.registry.zookeeper.listener.ChildrenListener;
-import cc.lee.registry.zookeeper.support.AbstractZooKeeperClient;
 
 import com.alibaba.dubbo.remoting.zookeeper.StateListener;
 
