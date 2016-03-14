@@ -33,7 +33,9 @@ import cc.lee.registry.util.ConcurrentHashSet;
 import cc.lee.registry.util.ConfigUtils;
 import cc.lee.registry.util.NamedThreadFactory;
 import cc.lee.registry.util.UrlUtils;
-
+/**
+ * @author lizhitao
+ */
 public abstract class AbstractRegistry implements Registry {
 	// SLF4j日志
 	protected final Logger log = LoggerFactory.getLogger(getClass());
@@ -68,9 +70,10 @@ public abstract class AbstractRegistry implements Registry {
 
 	public AbstractRegistry(URL url) {
 		setUrl(url);
+		// 是否同步保存文件，默认为false
 		syncSaveFile = url.getParameter(Constants.REGISTRY_FILESAVE_SYNC_KEY, false);;
 		// 缓存文件保存路径
-		String fileName =url.getParameter(Constants.FILE_KEY, System.getProperty("user.home") + "/.dubbo/dubbo-registry-" + url.getHost() + ".cache");
+		String fileName =url.getParameter(Constants.FILE_KEY, System.getProperty("user.home") + "/.registry-center/registry-" + url.getHost() + ".cache");
 		File file = null;
 		
 		// 缓存文件不存在，创建缓存文件
