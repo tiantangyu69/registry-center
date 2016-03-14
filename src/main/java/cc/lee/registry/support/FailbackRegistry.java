@@ -33,8 +33,9 @@ public abstract class FailbackRegistry extends AbstractRegistry {
     
 	public FailbackRegistry(URL url) {
 		super(url);
+		// 默认5秒重试一次
         int retryPeriod = url.getParameter(Constants.REGISTRY_RETRY_PERIOD_KEY, Constants.DEFAULT_REGISTRY_RETRY_PERIOD);
-        this.retryFuture = retryExecutor.scheduleWithFixedDelay(new Runnable() {
+        this.retryFuture = retryExecutor.scheduleWithFixedDelay(new Runnable() {// 执行定时重试任务
             public void run() {
                 // 检测并连接注册中心
                 try {
